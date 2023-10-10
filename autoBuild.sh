@@ -19,9 +19,9 @@ while true; do
     1)
       echo -n "Indique el path del repo para clonarlo: "
       read repo
-      cd "$ruta" || exit
+      cd "$ruta" 
       git clone "$repo"
-      cd "$repo" || exit
+      cd "$repo" 
       echo "$repo"
       echo
       ;;
@@ -29,10 +29,10 @@ while true; do
       echo "Se va a crear la estructura del proyecto para Windows"
       echo -n "Indica el path absoluto local: "
       read ruta
-      cd "$ruta" || exit
+      cd "$ruta"
       mkdir src
       mkdir test
-      python3 -m venv venv
+      python3 -m virtualenv venv
       source venv/bin/activate
       pip install pytest
       echo "source venv/bin/activate" | xclip -selection clipboard

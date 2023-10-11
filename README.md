@@ -7,6 +7,11 @@
 
 Este pequeño script automatiza la creación de proyectos para los alumnos de 1º de DAW 
 
+> ⚠️ IMPORTANTE SE REQUIERE INSTALAR XCLIP EN LINUX ⚠️
+```bash
+apt install xclip
+```
+
 ## Uso del programa
 
 El programa pedirá primeramente una ruta para trabajar con el proyecto donde el usuario quiera clonarse primeramente el repositorio aportado por la moodle
